@@ -3,6 +3,7 @@
 ) }}
 
 SELECT
+distinct
     seller_surrogate_key,
     seller_zip_code_prefix,
     seller_city,

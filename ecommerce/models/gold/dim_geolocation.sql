@@ -1,6 +1,7 @@
 {{ config(materialized='table') }}
 
 SELECT
+distinct
     geolocation_surrogate_key,
     geolocation_id,
     geolocation_zip_code_prefix,

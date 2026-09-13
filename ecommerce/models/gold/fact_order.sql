@@ -28,9 +28,7 @@
         order_delivered_carrier_date,
         order_delivered_customer_date,
         order_estimated_delivery_date,
-      shipping_limit_date
-
-        
+      shipping_limit_date 
     FROM {{ ref('obt') }}
 
 
