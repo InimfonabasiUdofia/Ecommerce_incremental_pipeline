@@ -5,7 +5,7 @@ from airflow.sdk import dag, task
 from airflow.operators.bash import BashOperator
 
 
-DBT_PROJECT_DIR = "/usr/local/ecommerce"
+DBT_PROJECT_DIR = "/usr/local/ecormmerce/ecommerce"
 
 
 @dag(
@@ -28,6 +28,7 @@ def orchestrate():
         )
 
     @task.bash
+    
     def source_freshness():
         return (
             f"cd {DBT_PROJECT_DIR} "
